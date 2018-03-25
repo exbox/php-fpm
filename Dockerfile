@@ -37,6 +37,7 @@ LABEL maintainer="Mahmoud Zalt <mahmoud@zalt.me>"
 # Example:
 #   - INSTALL_ZIP_ARCHIVE=true
 #
+RUN apt-get update -yqq && apt-get -y install procps
 
 #####################################
 # SOAP:
