@@ -359,6 +359,8 @@ RUN if [ ${INSTALL_IMAGEMAGICK} = true ]; then \
     docker-php-ext-enable imagick \
 ;fi
 
+COPY ./imagemagick-policy.xml /etc/ImageMagick-6/policy.xml
+
 #####################################
 # IMAP:
 #####################################
